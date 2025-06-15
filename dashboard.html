@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Rental Elektronik</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Sidebar -->
+  <aside class="fixed top-0 left-0 w-64 h-screen bg-white shadow-lg">
+    <div class="p-6 border-b">
+      <h1 class="text-2xl font-bold text-blue-600">Rental Elektronik</h1>
+    </div>
+    <nav class="mt-4 space-y-2 px-4">
+      <a href="#" class="flex items-center gap-2 text-blue-600 font-medium">
+        <img src="assets/icons/home.svg" class="w-5 h-5"> Dashboard
+      </a>
+      <a href="#" class="flex items-center gap-2 hover:text-blue-600">
+        <img src="assets/icons/box.svg" class="w-5 h-5"> Produk
+      </a>
+      <a href="#" class="flex items-center gap-2 hover:text-blue-600">
+        <img src="assets/icons/receipt.svg" class="w-5 h-5"> Penyewaan
+      </a>
+      <a href="#" class="flex items-center gap-2 hover:text-blue-600">
+        <img src="assets/icons/users.svg" class="w-5 h-5"> Pelanggan
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="ml-64 p-6">
+    <h2 class="text-3xl font-semibold mb-6">Dashboard</h2>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+      <div class="bg-white p-5 rounded-xl shadow-md">
+        <h3 class="text-lg font-semibold">Total Produk</h3>
+        <p class="text-2xl mt-2 font-bold text-blue-600">120</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl shadow-md">
+        <h3 class="text-lg font-semibold">Total Penyewaan</h3>
+        <p class="text-2xl mt-2 font-bold text-green-600">89</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl shadow-md">
+        <h3 class="text-lg font-semibold">Pendapatan</h3>
+        <p class="text-2xl mt-2 font-bold text-yellow-600">Rp 12.000.000</p>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="bg-white p-5 rounded-xl shadow-md">
+      <h3 class="text-xl font-semibold mb-4">Produk Populer</h3>
+      <table class="w-full text-left">
+        <thead>
+          <tr class="text-sm text-gray-600 border-b">
+            <th class="py-2">Nama</th>
+            <th class="py-2">Kategori</th>
+            <th class="py-2">Harga</th>
+            <th class="py-2">Disewa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t hover:bg-gray-50">
+            <td class="py-2">Laptop Asus</td>
+            <td class="py-2">Komputer</td>
+            <td class="py-2">Rp 150.000</td>
+            <td class="py-2">35x</td>
+          </tr>
+          <tr class="border-t hover:bg-gray-50">
+            <td class="py-2">Proyektor Epson</td>
+            <td class="py-2">Elektronik</td>
+            <td class="py-2">Rp 100.000</td>
+            <td class="py-2">20x</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</body>
+</html>
